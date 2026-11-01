@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notes</title>
+  <style>
+    :root {
+      --bg: #f2f4f7;
+      --card: #fff;
+      --ink: #16212c;
+      --line: #d9dfe6;
+      --accent: #1d4ed8;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #10161d;
+        --card: #17202a;
+        --ink: #e8edf2;
+        --line: #2a3643;
+        --accent: #6c97ff;
+      }
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.5 system-ui, sans-serif;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+
+    h1 {
+      margin: 0 0 24px;
+    }
+
+    .box {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+
+    summary {
+      padding: 14px 18px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    summary::marker {
+      color: var(--accent);
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1> DSA Notes</h1>
+
+    <!-- ===== FOLDERS =====
+       Folder on your computer:  unit1/   unit2/   unit3/
+       Put that unit's files inside it, e.g. unit1/notes.pdf
+       To add a file: copy one <li> line inside the folder and change the name -->
+
+    <details class="box">
+      <summary>Unit 1</summary>
+      <ul>
+        <li><span>Arrays</span> <a href="unit1/arrays.pdf" download>Download</a></li>
+      </ul>
+    </details>
+
+    <details class="box">
+      <summary>Unit 3</summary>
+      <ul>
+        <li><span>Notes</span> <a href="unit3/notes.pdf" download>Download</a></li>
+        <li><span>Graphs</span> <a href="unit3/graphs.pdf" download>Download</a></li>
+        <li><span>Traversal</span> <a href="unit3/traversal.pdf" download>Download</a></li>
+        <li><span>Traversal Steps</span> <a href="unit3/traversal steps.docx" download>Download</a></li>
+      </ul>
+    </details>
+
+    <details class="box">
+      <summary>Unit 4</summary>
+      <ul>
+        <li><span>Notes</span> <a href="unit 4/notes.pdf" download>Download</a></li>
+        <li><span>Linear & Binary Search</span> <a href="unit 4/linear_binary.pdf" download>Download</a></li>
+        <li><span>Hashing Notes</span> <a href="unit 4/Hashing_Notes.pdf" download>Download</a></li>
+        <li><span>Collisions</span> <a href="unit 4/collisions.docx" download>Download</a></li>
+      </ul>
+    </details>
+
+    <!-- ===== INDIVIDUAL FILES (not inside any folder) =====
+       Put these files right next to index.html -->
+    <div class="box">
+      <ul>
+        <li><span>Syllabus</span> <a href="syllabus.pdf" download>Download</a></li>
+      </ul>
+    </div>
+  </main>
+</body>
+
+</html>
